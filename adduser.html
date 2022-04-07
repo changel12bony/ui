@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>
+            Add User
+        </title>
+        <style>
+            body{
+                font-family: 'Times New Roman', Times, serif;
+            }
+            *{
+               box-sizing: border-box; 
+            }
+            body{
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .header{
+                padding: 40px;
+                text-align: left;
+                background-color: blueviolet;
+                color: #ccc;
+                font-size: 10px;
+                font-style: normal;
+            }
+            .coloumn{
+                float: left;
+                width: 25%;
+                padding: 010px;
+            }
+            .avatar {
+
+                    vertical-align: middle;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                  }
+
+/* Style the counter cards */
+
+.card {
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+       padding: 16px;
+       text-align: center;
+       background-color: #f1f1f1;
+      }
+
+input[type=text], select, textarea
+ {
+
+        width: 100%;
+        padding: 12px;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+
+}
+.container
+ {
+     border-radius: 5px;
+     background-color: #f2f2f2;
+     padding: 20px;
+}
+  </style>
+  </head>
+        <body>
+            <div>
+             <div class="header">
+              <h1>USER MANAGEMENT</h1>
+              </div>
+             </div>
+               <div class="row">
+                <form  action="index.html" method="get" id="nameform"></form>
+                <div class="column">
+                    <div>
+                  <div class="card">
+                        <img src="avatar.jpg" alt="Avatar" style="width: 50%">
+                        <div class="container">
+                        <form action="/action_page.php">
+                        <label for="fname">First Name</label>
+                         <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                         <label for="lname">Last Name</label>    
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="lname">Phone Number</label>
+              <input type="text" id="pno" name="pnone number" placeholder="phone no ..">
+              <label for="lname">Education</label>
+              <input type="text" id="edu" name="education" placeholder="">
+             
+            </form>
+        </div>
+      <button type="save" form="nameform" value="Save">Save</button>
+      <button type="cancel" form ="nameform" value="Cancel">Cancel</button>
+  </div>
+  </div>
+</div>
+
+    </form>
+
+</div>
+        </body>
+</html>
